@@ -24,7 +24,7 @@ def bat_():
     filepath=r"C:\Users\sergey\Desktop\bat.bat"
     print('start')
     p = subprocess.Popen(filepath, shell=True, stdout = subprocess.PIPE)
-    #p = subprocess.Popen(['powershell', calc])
+    #p = subprocess.Popen(['powershell', 'calc'])
     print('finish')
     stdout, stderr = p.communicate()
     print(p.returncode) # is 0 if success
