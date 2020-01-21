@@ -31,7 +31,7 @@ def bat_():
 
 @app.route('/start/all', methods=['POST'])
 def login_():
-    '''curl -i -H "Content-Type: application/json" -X POST -d "{\"State\": \"start\"}" http://127.0.0.1:5000'''
+    '''curl -i -H "Content-Type: application/json" -X POST -d "{\"State\": \"test\", \"post\":{\"test\":\"bugaga\"}}" http://127.0.0.1:5000/start/all'''
     if not request.json or not 'State' in request.json:
         abort(400)
     State = request.json.get('State')
